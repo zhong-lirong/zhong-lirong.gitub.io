@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人作品集 | 品牌设计 · 包装设计 · 主图详情设计</title>
+    <meta
+      name="description"
+      content="个人作品集网站，展示品牌设计、包装设计、主图详情设计和个人简历。"
+    />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body class="is-home">
+    <header class="topbar">
+      <a class="brand" href="#home" data-page-link="home" aria-label="返回主页">
+        <span class="brand-mark">Y</span>
+        <span class="brand-text">
+          <strong data-site-field="siteName">YAO 个人作品集</strong>
+          <small data-site-field="siteRole">品牌设计 / 包装设计 / 电商视觉 / 3D</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#home" data-page-link="home" class="is-active">主页</a>
+        <a href="#brand" data-page-link="brand">品牌设计</a>
+        <a href="#packaging" data-page-link="packaging">包装设计</a>
+        <a href="#mainvisual" data-page-link="mainvisual">主图详情设计</a>
+        <a href="#about" data-page-link="about">关于我</a>
+      </nav>
+
+      <button class="settings-button" id="openAdmin" type="button" title="管理登录" aria-label="管理登录">
+        设置
+      </button>
+    </header>
+
+    <main>
+      <section class="page-view home-page is-active" data-page="home" aria-label="主页海报">
+        <div class="poster-motion" id="posterMotion">
+          <img
+            class="home-poster"
+            id="homePoster"
+            src="/assets/brand/home-poster.png"
+            alt="个人作品集首屏海报，IP 角色冲向屏幕，鼠标、键盘和设计软件界面环绕飞出"
+          />
+        </div>
+        <div class="poster-shade" aria-hidden="true"></div>
+        <div class="home-caption">
+          <p data-site-field="heroKicker">DESIGN PORTFOLIO</p>
+          <h1 data-site-field="heroTitle">让作品第一眼冲出屏幕</h1>
+        </div>
+      </section>
+
+      <section class="page-view work-page" data-page="brand" aria-labelledby="brandTitle">
+        <div class="page-inner">
+          <div class="page-heading">
+            <p class="eyebrow">Brand Design</p>
+            <h1 id="brandTitle">品牌设计作品</h1>
+            <p>
+              这里后续放 Logo、品牌视觉系统、VI 手册、字体规范、色彩系统和线下物料延展。
+            </p>
+          </div>
+          <div class="feature-layout">
+            <article class="feature-card is-large">
+              <span>01</span>
+              <h2>品牌视觉系统</h2>
+              <p>用于展示完整品牌项目，从标志概念到应用场景，形成一套清晰可浏览的作品档案。</p>
+            </article>
+            <article class="feature-card">
+              <span>02</span>
+              <h2>Logo 与图形</h2>
+              <p>预留标志方案、辅助图形、字体组合和图形语言说明。</p>
+            </article>
+            <article class="feature-card">
+              <span>03</span>
+              <h2>物料延展</h2>
+              <p>名片、手提袋、门店、社交媒体和品牌周边都可以集中展示。</p>
+            </article>
+          </div>
+          <div class="section-title">
+            <h2>作品占位</h2>
+            <span id="brandCount">待上传</span>
+          </div>
+          <div class="work-grid" id="brandGrid"></div>
+        </div>
+      </section>
+
+      <section class="page-view work-page" data-page="packaging" aria-labelledby="packagingTitle">
+        <div class="page-inner">
+          <div class="page-heading">
+            <p class="eyebrow">Packaging Design</p>
+            <h1 id="packagingTitle">包装设计作品</h1>
+            <p>
+              这里后续放礼盒包装、产品标签、瓶身视觉、外箱结构、食品包装和美妆包装方案。
+            </p>
+          </div>
+          <div class="wide-showcase">
+            <div>
+              <span>包装作品页面</span>
+              <h2>从货架第一眼到开箱体验</h2>
+              <p>适合放包装主视觉、结构展开图、材质说明、系列化延展和场景渲染。</p>
+            </div>
+            <img src="/assets/samples/ecommerce-serum.png" alt="包装设计占位图" />
+          </div>
+          <div class="section-title">
+            <h2>作品占位</h2>
+            <span id="packagingCount">待上传</span>
+          </div>
+          <div class="work-grid" id="packagingGrid"></div>
+        </div>
+      </section>
+
+      <section class="page-view work-page commerce-page" data-page="mainvisual" aria-labelledby="mainvisualTitle">
+        <div class="page-inner">
+          <div class="commerce-hero">
+            <div class="commerce-hero-copy">
+              <p class="eyebrow">Commerce Visual Store</p>
+              <h1 id="mainvisualTitle">主图详情设计作品</h1>
+              <p>
+                像逛电商页面一样浏览作品：主图、卖点图、详情页长图和商品场景合成会被整理成一个个“视觉商品”。
+              </p>
+            </div>
+            <div class="commerce-search-box" aria-label="电商作品频道信息">
+              <span>视觉案例搜索</span>
+              <strong>主图 / 详情页 / 场景合成</strong>
+              <small>淘宝 · 天猫 · 京东 · 抖音商城</small>
+            </div>
+          </div>
+          <div class="shop-layout">
+            <article class="shop-panel">
+              <span>01</span>
+              <h2>淘宝 / 天猫主图</h2>
+              <p>偏强转化首屏，突出产品、卖点、活动氛围和点击吸引力。</p>
+            </article>
+            <article class="shop-panel">
+              <span>02</span>
+              <h2>京东详情页</h2>
+              <p>偏结构化表达，适合放功能拆解、材质说明、参数模块和长图切片。</p>
+            </article>
+            <article class="shop-panel">
+              <span>03</span>
+              <h2>其它电商视觉</h2>
+              <p>小红书、抖音商城、1688、跨境平台等页面后续也可以扩展。</p>
+            </article>
+          </div>
+          <div class="commerce-sortbar" aria-label="电商作品筛选">
+            <button class="is-active" type="button">综合推荐</button>
+            <button type="button">高点击主图</button>
+            <button type="button">详情长图</button>
+            <button type="button">场景合成</button>
+          </div>
+          <div class="section-title commerce-section-title">
+            <h2>视觉商品橱窗</h2>
+            <span id="mainvisualCount">待上传</span>
+          </div>
+          <div class="work-grid commerce-grid" id="mainvisualGrid"></div>
+        </div>
+      </section>
+
+      <section class="page-view work-page about-page" data-page="about" aria-labelledby="aboutTitle">
+        <div class="page-inner">
+          <div class="about-hero">
+            <div>
+              <p class="eyebrow">About Me</p>
+              <h1 id="aboutTitle">关于我</h1>
+              <p data-site-field="heroText">
+                这里后续可以替换成你的个人简介、擅长方向、工作经历、项目经验和联系方式。
+              </p>
+            </div>
+            <img src="/assets/brand/ip-original.png" alt="个人 IP 形象" />
+          </div>
+
+          <div class="resume-grid">
+            <article class="resume-card">
+              <span>技能方向</span>
+              <h2>品牌 / 包装 / 电商视觉 / 3D</h2>
+              <p data-site-field="introText">
+                熟悉品牌系统、包装视觉、主图详情页、三维辅助渲染和商业视觉落地。
+              </p>
+            </article>
+            <article class="resume-card">
+              <span>工作经历</span>
+              <h2 data-site-field="experienceTitle">工作经历</h2>
+              <ul id="experienceList">
+                <li>2026 至今：个人作品集持续更新中</li>
+                <li>后续可填写公司、岗位、项目职责和成果</li>
+                <li>也可以补充软件能力：PS、AI、C4D、Blender 等</li>
+              </ul>
+            </article>
+            <article class="resume-card">
+              <span>联系方式</span>
+              <h2 data-site-field="contactTitle">欢迎交流项目合作</h2>
+              <p data-site-field="contactText">这里后续放邮箱、微信、站酷、小红书、Behance 或 B 站。</p>
+              <div class="contact-list">
+                <a id="emailLink" href="mailto:yourname@example.com" data-site-field="email">yourname@example.com</a>
+                <span data-site-field="wechat">微信号待填写</span>
+                <span data-site-field="social">站酷 / 小红书 / Behance / B 站</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="detailModal" hidden>
+      <article class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+        <button class="icon-button modal-close" type="button" data-close-detail aria-label="关闭作品详情">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="detail-content">
+          <p class="eyebrow" id="detailCategory">作品</p>
+          <h2 id="detailTitle"></h2>
+          <p id="detailSummary"></p>
+          <div class="commerce-buy-box" id="commerceBuyBox" hidden>
+            <div class="commerce-price-line">
+              <span>视觉方案价</span>
+              <strong id="commerceDetailPrice">¥399</strong>
+              <small>作品展示价</small>
+            </div>
+            <div class="commerce-coupon-row">
+              <span>满屏冲击</span>
+              <span>详情长图</span>
+              <span>可改文案</span>
+            </div>
+            <div class="commerce-action-row">
+              <button type="button" data-detail-action="view-detail">查看完整详情</button>
+              <button type="button" data-detail-action="save-case">收藏案例</button>
+            </div>
+            <p id="commerceDetailSales">浏览 1200+ · 好评 4.9</p>
+          </div>
+          <dl class="meta-list">
+            <div><dt>平台</dt><dd id="detailPlatform"></dd></div>
+            <div><dt>年份</dt><dd id="detailYear"></dd></div>
+            <div><dt>职责</dt><dd id="detailRole"></dd></div>
+            <div><dt>项目</dt><dd id="detailClient"></dd></div>
+          </dl>
+          <div class="tag-list" id="detailTags"></div>
+          <p class="detail-notes" id="detailNotes"></p>
+        </div>
+        <div class="detail-gallery" id="detailImageList" aria-label="作品图片完整浏览"></div>
+      </article>
+    </div>
+
+    <aside class="admin-drawer" id="adminDrawer" aria-hidden="true">
+      <div class="drawer-head">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h2>内容管理</h2>
+        </div>
+        <button class="icon-button" id="closeAdmin" type="button" aria-label="关闭管理面板">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <form class="login-panel" id="loginForm">
+        <label>
+          <span>管理口令</span>
+          <input id="adminKey" type="password" autocomplete="current-password" placeholder="输入固定密码" />
+        </label>
+        <button class="primary-button" type="submit">进入管理</button>
+        <p id="loginMessage" class="form-message"></p>
+      </form>
+
+      <div class="admin-panel" id="adminPanel" hidden>
+        <div class="admin-tabs" id="adminTabs">
+          <button class="is-active" type="button" data-admin-tab="site">页面文案</button>
+          <button type="button" data-admin-tab="works">上传作品</button>
+        </div>
+
+        <form class="admin-form" id="siteForm" data-admin-panel="site">
+          <label><span>网站名称</span><input id="siteNameInput" /></label>
+          <label><span>身份说明</span><input id="siteRoleInput" /></label>
+          <label><span>首页角标</span><input id="heroKickerInput" /></label>
+          <label><span>首页标题</span><textarea id="heroTitleInput" rows="2"></textarea></label>
+          <label><span>关于我简介</span><textarea id="heroTextInput" rows="4"></textarea></label>
+          <label><span>技能标题</span><textarea id="introTitleInput" rows="2"></textarea></label>
+          <label><span>技能说明</span><textarea id="introTextInput" rows="4"></textarea></label>
+          <label><span>工作经历标题</span><input id="experienceTitleInput" /></label>
+          <label>
+            <span>工作经历</span>
+            <textarea id="experienceInput" rows="6" placeholder="每行一条，例如：2021-2024：某公司 / 电商设计师 / 负责主图详情页"></textarea>
+            <small class="field-help">每行会自动生成一条经历，支持公司、岗位、项目职责和成果。</small>
+          </label>
+          <label><span>联系方式标题</span><input id="contactTitleInput" /></label>
+          <label><span>联系方式说明</span><textarea id="contactTextInput" rows="3"></textarea></label>
+          <div class="form-grid">
+            <label><span>邮箱</span><input id="emailInput" /></label>
+            <label><span>微信</span><input id="wechatInput" /></label>
+          </div>
+          <label><span>社交平台</span><input id="socialInput" /></label>
+          <button class="primary-button" type="submit">保存页面文案</button>
+          <p id="siteMessage" class="form-message"></p>
+        </form>
+
+        <div data-admin-panel="works" hidden>
+          <form class="admin-form" id="workForm">
+            <input type="hidden" id="workId" />
+            <div class="form-grid">
+              <label><span>作品标题</span><input id="titleInput" required maxlength="80" /></label>
+              <label>
+                <span>上传到页面</span>
+                <select id="categoryInput">
+                  <option value="vi">品牌设计页面</option>
+                  <option value="packaging">包装设计页面</option>
+                  <option value="ecommerce">主图详情设计页面</option>
+                </select>
+                <small class="field-help" id="categoryHint">作品会发布到品牌设计页面。</small>
+              </label>
+              <label><span>平台 / 类型</span><input id="platformInput" placeholder="淘宝 / 京东 / VI / 包装" /></label>
+              <label><span>年份</span><input id="yearInput" inputmode="numeric" /></label>
+              <label><span>职责</span><input id="roleInput" placeholder="设计 / 建模 / 视觉合成" /></label>
+              <label><span>项目</span><input id="clientInput" placeholder="客户或概念作品" /></label>
+            </div>
+            <label><span>一句话简介</span><textarea id="summaryInput" rows="3"></textarea></label>
+            <label><span>项目详情</span><textarea id="detailsInput" rows="4"></textarea></label>
+            <label><span>标签</span><input id="tagsInput" placeholder="用逗号分隔，例如：品牌, 包装, 电商" /></label>
+            <label class="file-drop" for="imageInput">
+              <input id="imageInput" type="file" accept="image/*" multiple />
+              <span>添加作品图片</span>
+              <small>可以单张追加，也可以一次多选；第一张会作为封面</small>
+            </label>
+            <div class="preview-row" id="uploadPreview"></div>
+            <label class="check-line">
+              <input id="featuredInput" type="checkbox" />
+              <span>设为重点作品</span>
+            </label>
+            <div class="form-actions">
+              <button class="primary-button" id="submitWork" type="submit">保存作品</button>
+              <button class="secondary-button" id="resetForm" type="button">清空</button>
+            </div>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+          <div class="manage-list" id="manageList"></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="drawer-scrim" id="drawerScrim" hidden></div>
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
